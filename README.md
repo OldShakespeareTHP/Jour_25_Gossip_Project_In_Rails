@@ -1,24 +1,27 @@
-# README
+# **The Gossip Project, avec Sinatra**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Genere un site affichant une liste de potins. Possible d'editer ou d'ajouter des potins, ainsi que de les commenter.
+Fait avec rails.
 
-Things you may want to cover:
+## :black_square_button: **Installation**
 
-* Ruby version
+1. ```git clone https://github.com/ForejyTHP/Jour_20_Sinatra.git```
+2. ```cd Jour_20_Sinatra```
+3. ```bundle install```
+4. ```rails db:create```
+5. ```rails db:migrate```
+6. ```rails db:seed```
 
-* System dependencies
 
-* Configuration
+## :black_square_button: Ouvrir la page suivante :
+[http://localhost:4567/](http://localhost:3000/)
+ 
+<details> <summary> A venir</summary>
+ 
+* ``` Commentaires multiples, et nested ```
+* ``` Liens vers les potins sur l'index ```
+* ``` Fichier source avec des potins realistes ou des citations de films ```
+</details>
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 👤Auteur
+Joffrey Marques : [ForejyTHP](https://github.com/ForejyTHP)
