@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html 
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a, a:hover, a:visited
+{
+    color: #DCDCDC;
+    text-decoration-line: none;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 10px black;
+    margin: 20px;
+    padding: 50px;
+    height: min-content;
+    width: min-content;
+}
+
+section
+{
+    border: thick double;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar
+{
+    min-width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.center_li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5;
+}
+
+.cercle 
+{
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 100%;
+    background: black;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#gossips_welcome_page
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width : available;
+}
+
+#welcome_title
+{
+    align-self: center;
+    text-align: center;
+    border-bottom: thick double;
+    width: fit-content;
+}

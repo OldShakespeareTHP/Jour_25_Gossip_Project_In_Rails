@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gossip Page</title>
+  </head>
+
+  <body>
+  <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href='/welcome/page/'>Accueil</a></li>
+          <li><a href='/team'>Team</a></li>
+          <li><a href='/team/contact'>Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <hr/>
+  <section class="center_li">
+    <p>
+    <%= @gossip.created_at.strftime("%Y-%m-%d %H:%M:%S")%><br/><br/>
+      ==<%= @gossip.title%>
+      , par  <a href='/gossips/user/<%= @gossip.user.id %>'>
+      <%= @gossip.user.first_name%>  
+      <%= @gossip.user.last_name%></a>==<br/><br/>
+      ==<%= @gossip.content%>==
+    </p>
+    </section>
+  </body>
+</html>

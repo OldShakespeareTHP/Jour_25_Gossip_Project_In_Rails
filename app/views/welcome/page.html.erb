@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome Page</title>
+  </head>
+
+  <body>
+  <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href='/welcome/page/'>Accueil</a></li>
+          <li><a href='/team'>Team</a></li>
+          <li><a href='/team/contact'>Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <section>
+    <h1 id="welcome_title">Bienvenue <%= @first_name %></h1>
+  <p>
+    <% @gossips.each.with_index(1) do |gossip, index| %>
+      <div id="gossips_welcome_page">
+        <div>
+            <%= gossip.title %><br/>
+          par : <%= gossip.user.first_name %>
+          </div>
+        <div>
+          <a href="/gossips/<%= index %>">
+              <div class="cercle"> <%= index%>
+              </div>
+          </a>
+        </div>
+      </div>
+         <br/>
+      <% end %>
+      </p>
+  </section>
+  </body>
+</html>

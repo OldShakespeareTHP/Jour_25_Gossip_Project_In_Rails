@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Page</title>
+  </head>
+
+  <body>
+  <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href='/welcome/page/'>Accueil</a></li>
+          <li><a href='/team'>Team</a></li>
+          <li><a href='/team/contact'>Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <hr/>
+  <section class="center_li">
+    <p>
+      <%= @user.first_name %>
+       <%= @user.last_name %> <br/>
+      Age : <%= @user.age %>
+      , ville : <%= @user.city.name%><br/><br/>
+      <%= @user.description %><br/><br/>
+      Contact : <%= @user.email %>
+    </p>
+    </section>
+  </body>
+</html>
