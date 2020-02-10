@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get 'welcome/page/:first_name', to: 'welcome#page'
   get 'welcome/page/', to: 'welcome#page'
+  get '/', to: 'welcome#page'
 
   get 'pages/home'
 end

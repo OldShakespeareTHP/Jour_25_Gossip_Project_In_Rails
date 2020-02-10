@@ -18,10 +18,9 @@
   <section class="center_li">
     <p>
     <%= @gossip.created_at.strftime("%Y-%m-%d %H:%M:%S")%><br/><br/>
-      ==<%= @gossip.title%>
-      , par  <a href='/gossips/user/<%= @gossip.user.id %>'>
-      <%= @gossip.user.first_name%>  
-      <%= @gossip.user.last_name%></a>==<br/><br/>
+      ==<%= @gossip.title%>== <br/>
+        par  <a href='/gossips/user/<%= @gossip.user.id %>'> 
+      <%= @gossip.user.first_name%> <%= @gossip.user.last_name%></a><br/><br/>
       ==<%= @gossip.content%>==
     </p>
     </section>
