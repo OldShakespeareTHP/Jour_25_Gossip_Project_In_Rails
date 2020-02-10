@@ -1,6 +1,6 @@
 # **The Gossip Project **
 
-Génère un site affichant une liste de potins. Possible d'éditer ou d'ajouter des potins, ainsi que de les commenter.
+Génère un site affichant une liste de potins. Possible d'afficher le profil de chaque utilisateur.
 Fait avec rails.
 
 ## :black_square_button: **Installation**
